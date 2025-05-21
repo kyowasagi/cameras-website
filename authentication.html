@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="contenaire">
+        <header>
+            <div class="header-content">
+                <img src="image/logo.png" alt="Logo Caméras UMMTO" class="logo">
+                <div class="header-text">
+                <h1>Inscription </h1>
+                </div>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Nos Produits</a></li>
+                <li><a href="panier.html">Panier <span id="compteur-panier" class="compteur-panier"></span></a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="authentication.html">Inscription</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="formulaire-inscription">
+                <h2>Créez votre compte</h2>
+                <form method="post" onsubmit="return validerInscription()">
+                    <label for="nom">Nom</label>
+                    <input name="x" type="text" placeholder="Entrez votre nom" id="nom" required> <br><br>
+
+                    <label for="prenom">Prénom</label>
+                    <input type="text" placeholder="Entrez votre prénom" id="prenom" name="prenom"><br><br>
+
+                    <label for="mail">Email</label>
+                    <input type="email" placeholder="Entrez votre email" id="mail" name="mail" required><br><br>
+
+                    <label for="tel">Numéro de téléphone</label>
+                    <input type="text" pattern="[0-9]{10}" placeholder="Entrez votre numéro" name="tel" id="tel" maxlength="10" required><br><br>
+
+                    <label for="mp">Mot de passe</label>
+                    <input type="password" placeholder="Entrez votre mot de passe" id="mp" name="mp" required><br><br>
+
+                    <label for="cmp">Confirmer le Mot de passe</label>
+                    <input type="password" placeholder="Confirmez votre mot de passe" id="cmp" name="cmp" required><br><br>
+
+                    <fieldset>
+                        <legend>Genre :</legend>
+                        <input type="radio" name="genre" id="choix-1" value="h" checked>
+                        <label for="choix-1">Homme</label> <br>
+                        <input type="radio" name="genre" id="choix-2" value="f">
+                        <label for="choix-2">Femme</label> <br>
+                    </fieldset> <br>
+
+                    <fieldset>
+                        <label><b>Votre profession : </b></label>
+                        <select name="profession" size="4">
+                            <option value="chomeur">Chômeur</option>
+                            <option value="etudiant">Étudiant</option>
+                            <option value="prive">Privé</option>
+                            <option value="freelance">freelance</option>
+
+                        </select>
+                    </fieldset> <br>
+
+                    <fieldset>
+                        <label><b>Vous êtes un(e) : </b></label> <br>
+                        <input type="checkbox" name="possede1" value="entreprise" checked> entreprise <br>
+                        <input type="checkbox" name="possede2" value="solo"> solo photographeur <br>
+                    </fieldset> <br>
+
+                    <label for="photo"><b>Télécharger votre photo :</b></label>
+                    <input type="file" id="photo"> <br><br>
+
+                    <input type="submit" value="S'inscrire">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Ce site est un projet de test </p>
+        </footer>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

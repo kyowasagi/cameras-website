@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="contenaire">
+        <header>
+            <div class="header-content">
+                <img src="image/logo.png" alt="Logo Caméras UMMTO" class="logo">
+                <div class="header-text">
+                <h1>Mon panier </h1>
+                </div>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Nos Produits</a></li>
+                <li><a href="panier.html">Panier </a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="authentication.html">Inscription</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="contenu-panier">
+                <h2>Vos articles</h2>
+                <div id="articles-panier">
+                    <p>Votre panier est vide</p>
+                </div>
+                
+                <div class="total-panier">
+                    <h3>Total: <span id="total">0,00</span>DZD</h3>
+                    <button onclick="validerCommande()">Valider la commande</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Ce site est un projet de test </p>
+        </footer>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

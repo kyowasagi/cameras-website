@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="contenaire">
+        <header>
+            <div class="header-content">
+                <img src="image/logo.png" alt="Logo Caméras UMMTO" class="logo" >
+                <div class="header-text">
+                <h1>Nos Caméras </h1>
+                </div>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Nos Produits</a></li>
+                <li><a href="panier.html">Panier <span id="compteur-panier" class="compteur-panier"></span></a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="authentication.html">Inscription</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="liste-produits">
+                <h2>Tous nos produits</h2>
+                <div class="produit-contenaire">
+
+
+        <!-- Liste des Produit-->
+    <div class="produit">
+        <img src="image/Canon EOS 4000D Camera with 18-55mm Lens.jpg" alt="Canon EOS 4000D Camera with 18-55mm Lens">
+        <h3>Canon EOS 4000D Camera with 18-55mm Lens</h3>
+        <p>Une caméra légendaire avec 24.1MP</p>
+        <p class="prix">85 000DZD</p>
+        <button onclick="ajouterAuPanier(1)">Ajouter au panier</button>
+    </div>
+    
+    <div class="produit">
+        <img src="image/Canon EOS M50 Mark II Mirrorless Camera with ( 15-45mm IS STM ).jpg" alt="Canon EOS M50 Mark II Mirrorless Camera with ( 15-45mm IS STM )">
+        <h3>Canon EOS M50 Mark II Mirrorless Camera with ( 15-45mm IS STM )</h3>
+        <p>Camera UHD avec zoom optique 3x</p>
+        <p class="prix">135 000DZD</p>
+        <button onclick="ajouterAuPanier(2)">Ajouter au panier</button>
+    </div>
+
+    <div class="produit">
+        <img src="image/Canon EOS M200 Compact Mirrorless Camera with ( 15-45mm IS STM ).jpg" alt="Canon EOS M200 Compact Mirrorless Camera with ( 15-45mm IS STM )">
+        <h3>Canon EOS M200 Compact Mirrorless Camera with ( 15-45mm IS STM )</h3>
+        <p>Full HD 1080p</p>
+        <p class="prix">92 000DZD</p>
+        <button onclick="ajouterAuPanier(3)">Ajouter au panier</button>
+    </div>
+ 
+    <div class="produit">
+        <img src="image/Nikon D7500 DSLR Camera with 18-140mm Lens.jpg" alt="Nikon D7500 DSLR Camera with 18-140mm Lens">
+        <h3>Nikon D7500 DSLR Camera with 18-140mm Lens</h3>
+        <p>Compacte et légère</p>
+        <p class="prix">249 000DZD</p>
+        <button onclick="ajouterAuPanier(4)">Ajouter au panier</button>
+    </div>
+    
+    <div class="produit">
+        <img src="image/Sony FE 24-240mm f3.5-6.3 OSS Lens.jpg" alt="Sony FE 24-240mm f3.5-6.3 OSS Lens">
+        <h3>Sony FE 24-240mm f3.5-6.3 OSS Lens.jpg</h3>
+        <p>Lens professionnelle pour une Super-Telephoto Versatility </p>
+        <p class="prix">435 000DZD</p>
+        <button onclick="ajouterAuPanier(5)">Ajouter au panier</button>
+    </div>
+    
+    <div class="produit">
+        <img src="image/Sony FE 200-600mm f5.6-6.3 G OSS Lens.jpg" alt="Sony FE 200-600mm f5.6-6.3 G OSS Lens">
+        <h3>Sony FE 200-600mm f5.6-6.3 G OSS Lens</h3>
+        <p>All-in-One Versatility</p>
+        <p class="prix">145 000DZD</p>
+        <button onclick="ajouterAuPanier(6)">Ajouter au panier</button>
+    </div>
+    
+    <div class="produit">
+        <img src="image/Zhiyun CRANE 2S PRO.jpg" alt="Zhiyun CRANE 2S PRO">
+        <h3>Zhiyun CRANE 2S PRO</h3>
+        <p>Haut de gamme. TransMount Image Transmitter 2.0</p>
+        <p class="prix">124 000DZD</p>
+        <button onclick="ajouterAuPanier(7)">Ajouter au panier</button>
+    </div>
+    
+    <div class="produit">
+        <img src="image/Zhiyun CRANE 2S.jpg" alt="Zhiyun CRANE 2S">
+        <h3>Zhiyun CRANE 2S</h3>
+        <p>Polyvalente et fiable</p>
+        <p class="prix">87 000DZD</p>
+        <button onclick="ajouterAuPanier(8)">Ajouter au panier</button>
+    </div>
+</div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Ce site est un projet de test </p>
+        </footer>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

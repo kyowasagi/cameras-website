@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="contenaire">
+        <header>
+            <div class="header-content">
+                <img src="image/logo.png" alt="Logo Caméras UMMTO" class="logo">
+                <div class="header-text">
+                    <h1>Connexion</h1>
+                </div>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Nos Produits</a></li>
+                <li><a href="panier.html">Panier <span id="compteur-panier" class="compteur-panier"></span></a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="authentication.html">Inscription</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="formulaire-connexion">
+                <h2>Connectez-vous</h2>
+                <form method="POST" onsubmit="return validerConnexion()">
+                    <input name="nom" type="text" placeholder="Nom d'utilisateur" required>
+                    <br><br>
+                    <input type="password" placeholder="Mot de passe" name="pw" required>
+                    <br><br>
+                    <input type="checkbox" id="souvenir">
+                    <label for="souvenir"> Se rappeler de moi</label>
+                    <a href="#">Mot de passe oublié</a>
+                    <br><br>
+                    <input type="submit" class="btn" value="Se connecter">
+                    <br><br>
+                    <p>Vous n'avez pas de compte ? <a href="authentication.html">S'inscrire</a></p>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Ce site est un projet de test </p>
+        </footer>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
