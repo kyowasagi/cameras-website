@@ -172,7 +172,7 @@ main {
 }
 
 .back {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/image/back.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://kyowasagi.github.io/cameras-website/image/back.jpg') no-repeat center center/cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
