@@ -1,6 +1,6 @@
-// Tableau 
 let panier = JSON.parse(localStorage.getItem('panier')) || [];
 
+//  le panier
 function ajouterAuPanier(idProduit) {
     const produits = [
         { id: 1, nom: "Canon EOS 4000D Camera with 18-55mm Lens", prix: 85000, image: "image/Canon EOS 4000D Camera with 18-55mm Lens.jpg" },
@@ -18,16 +18,16 @@ function ajouterAuPanier(idProduit) {
         const produitExistant = panier.find(p => p.id === idProduit);  
         if (!produitExistant) {
             panier.push(produit);
-
             localStorage.setItem('panier', JSON.stringify(panier));
             alert(`${produit.nom} a été ajouté à votre panier`);
             mettreAJourPanier();
+            mettreAJourBullePanier();
         } else {
             alert('Ce produit est déjà dans votre panier');
         }
     }
 }
-// mise a jour panier
+
 function mettreAJourPanier() {
     const contenuPanier = document.getElementById('articles-panier');
     const totalElement = document.getElementById('total');
@@ -61,22 +61,26 @@ function mettreAJourPanier() {
     if (totalElement) totalElement.textContent = total.toFixed(2);
 }
 
-
 function supprimerProduit(index) {
     panier.splice(index, 1);
     localStorage.setItem('panier', JSON.stringify(panier));
     mettreAJourPanier();
+    mettreAJourBullePanier();
 }
 
-function validerCommande() {
-    if (panier.length === 0) {
-        alert('Votre panier est vide');
-        return;
+function mettreAJourBullePanier() {
+    const bulle = document.querySelector('.panier-bulle');
+    if (bulle) {
+        if (panier.length > 0) {
+            bulle.textContent = panier.length;
+            bulle.style.display = 'flex';
+        } else {
+            bulle.style.display = 'none';
+        }
     }
-    
-    window.location.href = 'login.html';
 }
 
+//  les formulaires
 function validerConnexion() {
     alert('Connexion réussie');
     return false;
@@ -93,11 +97,22 @@ function validerInscription() {
     
     alert('Inscription réussie');
     window.location.href = 'login.html';
-    
+    return false;
 }
-//chargement de contenu
+
+function validerCommande() {
+    if (panier.length === 0) {
+        alert('Votre panier est vide');
+        return;
+    }
+    
+    window.location.href = 'login.html';
+}
+
+// Initialisation
 document.addEventListener('DOMContentLoaded', function() {
     if (window.location.pathname.includes('panier.html')) {
         mettreAJourPanier();
     }
+    mettreAJourBullePanier();
 });
