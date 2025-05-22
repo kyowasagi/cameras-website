@@ -70,7 +70,7 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(135deg, #676783, #1a274b);
+  background: linear-gradient(135deg,var(--dark-color), var(--primary-color) );
   color: var(--text-light);
   padding: 20px 0;
   box-shadow: var(--shadow);
