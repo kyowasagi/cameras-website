@@ -172,7 +172,7 @@ main {
 }
 
 .back {
-  background-image: url('/image/back.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/image/back.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
