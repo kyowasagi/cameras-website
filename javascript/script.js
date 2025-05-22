@@ -116,3 +116,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     mettreAJourBullePanier();
 });
+
+
+function toggleMenu() {
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+}
