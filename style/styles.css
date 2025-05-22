@@ -171,8 +171,11 @@ main {
   padding: 30px 0;
 }
 
-.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/hero-bg.jpg') no-repeat center center/cover;
+.back {
+  background-image: url('/image/back.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   color: var(--text-light);
   height: 70vh;
   display: flex;
@@ -183,21 +186,21 @@ main {
   animation: fadeIn 1s ease-out;
 }
 
-.hero-content {
+.back-content {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   transform-style: preserve-3d;
 }
 
-.hero h2 {
+.back h2 {
   font-size: 3rem;
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   animation: fadeIn 1.2s ease-out;
 }
 
-.hero p {
+.back p {
   font-size: 1.2rem;
   margin-bottom: 30px;
   animation: fadeIn 1.4s ease-out;
